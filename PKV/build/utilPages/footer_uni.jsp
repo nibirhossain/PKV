@@ -1,0 +1,4 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<div id="footer"><ul class="footerlist"><li>Letzte Änderung&nbsp;19.04.2012</li><li><a href="mailto:webmaster@informatik.uni-stuttgart.de" title="mail to webmaster" class="email">&nbsp;wm</a></li><li><a href="http://www.uni-stuttgart.de/" title="Universität Stuttgart" target="_top">©&nbsp;Universität Stuttgart</a></li><li><a href="http://www.informatik.uni-stuttgart.de/impressum.html" title="Impressum">Impressum</a></li></ul></div>
