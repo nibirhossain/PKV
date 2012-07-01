@@ -42,7 +42,7 @@
 		</tstamp>
 		<echo message="Build timestamp: ${build.tstamp}" />
 		<echo message="Build timestamp: ${project.dir}" />
-		<echo message="Build timestamp: ${build.dir}" />
+		<echo message="Tomcat Home Directory: ${tomcat.home}" />
 		<mkdir dir="${project.dir}" />
 		<mkdir dir="${build.dir}" />
 	</target>
@@ -100,12 +100,13 @@
 
 	<!--======================= Package as WAR Archive )=========-->
 	<target name="war" depends="build" description="creates a deployable war archive">
-		<war destfile="pkv.war" webxml="WebContent/WEB-INF/web.xml">
-			<fileset dir="${build.dir}/CSS" />
+		<war destfile="pkv.war" webxml="WebContent/WEB-INF/web.xml">		
+			<!-- <fileset dir="${build.dir}/CSS" /> -->
+			<fileset dir="WebContent" />								
 			<lib dir="WebContent/WEB-INF/lib">
 				<exclude name="jstl.jar" />
 			</lib>
-			<classes dir="${classes.dir}" />
+			<classes dir="${classes.dir}" />			
 		</war>
 	</target>
 
