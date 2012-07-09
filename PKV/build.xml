@@ -57,7 +57,7 @@
 
 	<!--======================= Compile =======================-->
 	<target name="compile" description="Compile All Java Files">
-		<javac target="1.7" destdir="${classes.dir}" classpathref="app.classpath" srcdir="${src.dir}" />
+		<javac destdir="${classes.dir}" classpathref="app.classpath" srcdir="${src.dir}" />
 	</target>
 
 	<target name="copytowebapps" depends="resources, compile" description="Build The Project">
@@ -73,11 +73,6 @@
 			</lib>
 			<classes dir="${classes.dir}" />			
 		</war>
-	</target>
-
-
-	<!--======================= for jsp only =======================-->
-	<target name="jsp" description="Copy jsp files">
 	</target>
 
 </project>
