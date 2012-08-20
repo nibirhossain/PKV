@@ -99,7 +99,7 @@ private static List<Question> readWriteData(int subject_id, int chapter_id) thro
 	question1.setChapterID(4);
 	questionDao.create(question1);*/
 	
-	List<Question> questions = questionDao.queryForEq("TBE_CHAPTER_ID", chapter_id);
+	List<Question> questions = questionDao.queryForEq("TBE_TOPIC_ID", chapter_id);
 	for (Question question : questions)
 	{
 		System.out.print("Question ID: " + question.getID() + " Question Name: " + question.getName() + " Topic ID: " + question.getCreatedYear() + " Topic ID: " + question.getChapterID() + "\n");

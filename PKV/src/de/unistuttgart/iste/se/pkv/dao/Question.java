@@ -1,5 +1,7 @@
 package de.unistuttgart.iste.se.pkv.dao;
 
+import java.util.Date;
+
 import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;
 
@@ -13,10 +15,12 @@ public class Question
 		private String name;
 		@DatabaseField(columnName = "CreatedYear")
 		private int createdYear;		 
-		//@DatabaseField(columnName = "CreatedDate")
-		//private Date createdDate;
-		@DatabaseField(columnName = "TBE_CHAPTER_ID")
-		private int chapterID ;
+		@DatabaseField(columnName = "CreatedDate")
+		private Date createdDate;
+		@DatabaseField(columnName = "TBE_TOPIC_ID")
+		private int topic_id;
+		@DatabaseField(columnName = "POINT")
+		private int question_point;
 		
 		public Question() 
 		{
@@ -35,6 +39,14 @@ public class Question
 		{
 			return name;
 		}		
+		public int getQuestionPoint() 
+		{
+			return question_point;
+		}
+		public void setQuestionPoint(int question_point) 
+		{
+			this.question_point = question_point;
+		}
 		public void setCreatedYear(int createdYear) 
 		{
 			this.createdYear = createdYear;
@@ -43,20 +55,20 @@ public class Question
 		{
 			return createdYear;
 		}
-		/*public void setCreatedDate(Date createdDate) 
+		public void setCreatedDate(Date createdDate) 
 		{
 			this.createdDate = createdDate ;
 		}
 		public Date getCreatedDate() 
 		{
 			return createdDate;
-		}*/
-		public void setChapterID(int chapterID) 
+		}
+		public void setChapterID(int topic_id) 
 		{
-			this.chapterID = chapterID;
+			this.topic_id = topic_id;
 		}
 		public int getChapterID() 
 		{
-			return chapterID;
+			return topic_id;
 		}		
 	}

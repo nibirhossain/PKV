@@ -29,7 +29,7 @@
 		<div id="content">
 			<!--TYPO3SEARCH_begin-->
 			<div id="text">
-					<h4>Institut für Softwaretechnologie</h4>
+					<!-- <h4>Institut für Softwaretechnologie</h4> -->
 			<%
 				Exam exam = (Exam)request.getAttribute("exam");
 			%>
@@ -45,7 +45,7 @@
 					{				
 					%>						
 						<tr>
-							<td style="vertical-align:top;" align="left"><b>Problem. <%=count %> </b>&nbsp;(10 Points) &nbsp;<%=question.getName() %></td>							
+							<td style="border-top: solid 1px #000; vertical-align:top;" align="left"><b>Problem. <%=count %> </b>&nbsp;(10 Points) &nbsp;<%=question.getName() %></td>							
 																			
 						</tr>								
 						<tr>

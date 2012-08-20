@@ -3,7 +3,7 @@ package de.unistuttgart.iste.se.pkv.dao;
 import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;
 
-@DatabaseTable(tableName = "TBE_CHAPTERS")
+@DatabaseTable(tableName = "TBE_TOPICS")
 public class Topic 
 {
 	

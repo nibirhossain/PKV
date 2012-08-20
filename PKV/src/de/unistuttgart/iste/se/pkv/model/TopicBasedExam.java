@@ -22,7 +22,7 @@ public class TopicBasedExam
 		Exam exam = new Exam();		
 		try 
 		{
-			// create our data-source for the databasehj
+			// create our data-source for the database
 			connection_source = DBManager.openJDBCConnection();
 			// setup our database and DAOs
 			setupDatabase(connection_source);
